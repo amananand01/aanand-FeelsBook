@@ -16,6 +16,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-    </application>
+        <activity android:name=".DisplayCommentActivity"
+            android:parentActivityName=".MainActivity">
+        </activity>    </application>
 
 </manifest>

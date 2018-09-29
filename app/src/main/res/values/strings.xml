@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">aanand-FeelsBook</string>
+    <string name="Main_heading">Record Feelings</string>
+    <string name="Feeling_Love">Love</string>
+    <string name="Feeling_Joy">Joy</string>
+    <string name="Feeling_Surprise">Surprise</string>
+    <string name="Feeling_Anger">Anger</string>
+    <string name="Feeling_Sadness">Sadness</string>
+    <string name="Feeling_Fear">Fear</string>
+    <string name="FeelingCount_Button">Feeling Count</string>
+    <string name="hint_comment">MAX 100 CHARACTERS</string>
+    <string name="title_comment"> Comments (Optional)</string>
+    <string name="Feeling_Saved"> Feeling Saved</string>
+    <string name="Save_button">SAVE</string>
 </resources>
