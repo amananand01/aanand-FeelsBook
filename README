@@ -13,6 +13,7 @@ Main Classes:
   - Load the data from the file
   - Saves the data to the file
   - Count feelings
+  - Save Feelings
 
 2) Emotions.Java
   - Emotions class
@@ -23,9 +24,13 @@ Main Classes:
       - toString() - to return the object in String format
 3) EditEmotion.Java
   - Activity for user to change the Date and Comment of the Feeling
-  - After changes sorts the feelings by date in ascending order
+  - After changes by the user, it sorts the feelings by date in ascending order
+  Methods Used :
+	 - SaveChanges(View view) : saves the changes made by user
+  	 - DevideAndConquer(int position,String Date) : to sort the dates
+	 - compareDate(String date1, String date2) : To compare if date1 comes before 		    date2
 4) DisplayCommentActivity.Java
- - Used to type comments
+ - Used to input the comments from the user
 
 Layouts:
 1) activity_main.xml
