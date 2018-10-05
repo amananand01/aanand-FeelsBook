@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    tools:context=".EditEmotion">
+
+    <EditText
+        android:id="@+id/editText_ss"
+        android:layout_width="45dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:ems="10"
+        android:hint="SS"
+        android:inputType="time"
+        app:layout_constraintBaseline_toBaselineOf="@+id/editText_min"
+        app:layout_constraintStart_toEndOf="@+id/editText_min" />
+
+    <EditText
+        android:id="@+id/editText_min"
+        android:layout_width="45dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:ems="10"
+        android:hint="MIN"
+        android:inputType="time"
+        app:layout_constraintBaseline_toBaselineOf="@+id/editText_hh"
+        app:layout_constraintStart_toEndOf="@+id/editText_hh" />
+
+    <EditText
+        android:id="@+id/editText_hh"
+        android:layout_width="45dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:ems="10"
+        android:hint="HH"
+        android:inputType="time"
+        app:layout_constraintBaseline_toBaselineOf="@+id/editText_yy"
+        app:layout_constraintStart_toEndOf="@+id/editText_yy" />
+
+    <EditText
+        android:id="@+id/editText_yy"
+        android:layout_width="67dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:ems="10"
+        android:hint="YYYY"
+        android:inputType="date"
+        android:text="Name"
+        app:layout_constraintBaseline_toBaselineOf="@+id/editText_mm"
+        app:layout_constraintStart_toEndOf="@+id/editText_mm" />
+
+    <EditText
+        android:id="@+id/edit_comment"
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="16dp"
+        android:scrollbars="horizontal"
+        android:maxLength="100"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+    <TextView
+        android:id="@+id/edit_feeling"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:scrollbars="horizontal"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/title_editFeelingsPage"
+
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/title_editDate"
+        android:textColor="@android:color/black"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_feeling" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/title_editFeeling"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/title_editComment"
+        android:textColor="@android:color/black"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText_yy" />
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:onClick="SaveChanges"
+        android:text="@string/button_editFeelingsPage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_comment" />
+
+    <EditText
+        android:id="@+id/editText_dd"
+        android:layout_width="45dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="DD"
+        android:inputType="date"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <EditText
+        android:id="@+id/editText_mm"
+        android:layout_width="45dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:ems="10"
+        android:hint="MM"
+        android:inputType="date"
+        app:layout_constraintBaseline_toBaselineOf="@+id/editText_dd"
+        app:layout_constraintStart_toEndOf="@+id/editText_dd" />
+
+</android.support.constraint.ConstraintLayout>
