@@ -28,7 +28,7 @@ Main Classes:
   Methods Used :
 	 - SaveChanges(View view) : saves the changes made by user
   	 - DevideAndConquer(int position,String Date) : to sort the dates
-	 - compareDate(String date1, String date2) : To compare if date1 comes before 		    date2
+	 - compareDate(String date1, String date2) : To compare if date1 comes before date2
 4) DisplayCommentActivity.Java
  - Used to input the comments from the user
 
