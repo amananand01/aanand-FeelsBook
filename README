@@ -1,7 +1,7 @@
 
 AMAN ANAND
-Student ID - 1481975
-CMPUT 301 - Assignment#1
+CMPUT - 301 Assignment#1
+University of Alberta
 
 Objectives : The objective of the assignment was to create an app called
 FeelsBook. The assignment helped to get familiarize with JAVA, Android Studio and
@@ -44,6 +44,8 @@ Layouts:
 4) list_item.xml
  - resource used for the adapter to show feelings on the list view
 
-References :
+References:
   - https://stackoverflow.com/questions/45987761/quicksort-divide-and-conquer/45987872
     By Josh Evans
+  - Lonely Twitter by Rosevear
+    https://github.com/Rosevear/lonelyTwitter/tree/f15tuesday/
