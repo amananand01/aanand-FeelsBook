@@ -1,8 +1,5 @@
 package com.example.aman.aanand_feelsbook;
 
-import java.text.SimpleDateFormat;
-import java.util.Date;
-
 public class Emotions {
     protected String date;
     protected String comment;
