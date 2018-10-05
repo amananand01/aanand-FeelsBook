@@ -18,6 +18,11 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 
+/*
+EditEmotion Class
+ - Used to change the items in the history list
+ - User can change date and comments
+*/
 public class EditEmotion extends AppCompatActivity {
 
     @Override
@@ -35,6 +40,7 @@ public class EditEmotion extends AppCompatActivity {
         FillValues();
     }
 
+    // Populates the fields(Feeling, Date, Comment when the item is clicked)
     private void FillValues(){
 
         // Get the Intent that started this activity and extract the string
@@ -66,7 +72,7 @@ public class EditEmotion extends AppCompatActivity {
         ((EditText)findViewById(R.id.editText_ss)).setText(sec);
     }
 
-
+    // Save all the changes made by the user to the fields Date and Comment
     public void SaveChanges(View view){
 
         // Get the Intent that started this activity and extract the string
@@ -83,7 +89,6 @@ public class EditEmotion extends AppCompatActivity {
 
         // make changes to the date and comment of the emotion
         Emotions emotion = MainActivity.emotions.get(position);
-//        emotion.setDate(date);
 
         emotion.setComment(((EditText) findViewById(R.id.edit_comment)).getText().toString());
         MainActivity.emotions.set(position,emotion);
@@ -102,6 +107,8 @@ public class EditEmotion extends AppCompatActivity {
 
     // https://stackoverflow.com/questions/45987761/quicksort-divide-and-conquer/45987872
     // By Josh Evans
+
+    // Used to sort emotions if a feeling date is changed
     private void DevideAndConquer(int position,String date){
 
         ArrayList<Emotions> less = new ArrayList<Emotions>();
@@ -133,6 +140,7 @@ public class EditEmotion extends AppCompatActivity {
         MainActivity.emotions=sorted;
     }
 
+    // used to compare two dates if date1 is before date2
     private boolean compareDate(String date1, String date2) {
         SimpleDateFormat newDate = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss");
         boolean bool = false;

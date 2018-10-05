@@ -10,6 +10,11 @@ import android.widget.TextView;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 
+/*
+DisplayCommentActivity Class
+ - Used to add a comment for the feeling
+ - USer can either save or go back ot the main screen
+ */
 public class DisplayCommentActivity extends AppCompatActivity {
 
     @Override
@@ -26,6 +31,8 @@ public class DisplayCommentActivity extends AppCompatActivity {
         heading_text.setText(" Feeling: "+ message + " Saved");
     }
 
+    // save comment listner
+    // saves the comment for the last feeling recorded
     public void SaveComment(View view){
 
         EditText bodyText = (EditText) findViewById(R.id.edit_Date);

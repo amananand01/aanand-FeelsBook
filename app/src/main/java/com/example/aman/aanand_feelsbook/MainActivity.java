@@ -45,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
     public static final String FILENAME_1 = "EmotionCount.sav";
     public ListView oldEmotions;
 
-
+    // HashMap to store the emotion count
     public static HashMap<String,Integer> feelingCount = new HashMap<String,Integer>();
 
     private ArrayAdapter<Emotions> adapter;
@@ -58,12 +58,14 @@ public class MainActivity extends AppCompatActivity {
 
         oldEmotions = (ListView) findViewById(R.id.old_emotions);
 
+        // Emotion history Item click Listner
         oldEmotions.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             public void onItemClick(AdapterView<?> parent, View view, final int position, long id) {
 
                 // show dialog box for comment section
                 final AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
 
+                // dialog box to ask fr deleting/editing the emotion
                 builder.setTitle("Feels Book");
                 builder.setMessage("Please select any one of the options");
 
@@ -106,13 +108,12 @@ public class MainActivity extends AppCompatActivity {
                 AlertDialog alert = builder.create();
                 alert.setCancelable(true);
                 alert.show();
-
             }
         });
     }
 
-    // dialog box code : https://www.youtube.com/watch?v=gLbH5bAHCiY
-    // called when the user clicks any emotion and takes to the comments page
+
+    // called when the user clicks any emotion
     public void SaveEmotion(View view){
 
         Button btn = (Button) findViewById(view.getId());
@@ -179,7 +180,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onStart() {
         // TODO Auto-generated method stub
         super.onStart();
-        loadFromFile();
+        loadFromFile(); // load all the emotions from the file
 
         // Adapter between listview and tweets
         adapter = new ArrayAdapter<Emotions>(this,
@@ -187,6 +188,8 @@ public class MainActivity extends AppCompatActivity {
         oldEmotions.setAdapter(adapter);
     }
 
+    // count feelings listner
+    // shows a dialog box on the screen with all the feeling counts
     public void count_feelings(View view){
         // show dialog box for comment section
         final AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
@@ -212,6 +215,7 @@ public class MainActivity extends AppCompatActivity {
         alert.show();
     }
 
+    // loads the objects from the file to the emotion list
     private void loadFromFile() {
         try {
 
@@ -245,6 +249,7 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    // saves the object from the list in the file
     public static void saveInFile(FileOutputStream fos, String FileName){
         try {
             OutputStreamWriter osw = new OutputStreamWriter(fos);
@@ -263,5 +268,4 @@ public class MainActivity extends AppCompatActivity {
             e.printStackTrace();
         }
     }
-
 }

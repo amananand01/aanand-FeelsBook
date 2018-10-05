@@ -1,5 +1,13 @@
 package com.example.aman.aanand_feelsbook;
 
+/*
+Emotions Class
+    - Used to make emotion objects
+    - Emotions recorded are : Joy, Love, Sadness, Fear, Anger, Surprise
+    - Constructor - stores Date
+    - toString() - returns the string format for the object
+    - Rest are getters and setters for the attributes.
+*/
 public class Emotions {
     protected String date;
     protected String comment;
