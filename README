@@ -1,3 +1,49 @@
 
 AMAN ANAND
 Student ID - 1481975
+CMPUT 301 - Assignment#1
+
+Objectives : The objective of the assignment was to create an app called
+FeelsBook. The assignment helped to get familiarize with JAVA, Android Studio and
+Object Oriented Design.
+
+App Video link : https://youtu.be/QvAUVqPzliE
+
+Main Classes:
+1) MainActivity.Java
+  - Main Activity of the Application
+  - Load the data from the file
+  - Saves the data to the file
+  - Count feelings
+
+2) Emotions.Java
+  - Emotions class
+  - Attributes : Date, Comment, Feeling
+  - Methods :
+      - Getters and setters for all attributes
+      - Constructor which takes date as an argument
+      - toString() - to return the object in String format
+3) EditEmotion.Java
+  - Activity for user to change the Date and Comment of the Feeling
+  - After changes sorts the feelings by date in ascending order
+4) DisplayCommentActivity.Java
+ - Used to type comments
+
+Layouts:
+1) activity_main.xml
+ - Main Activity Page
+ - Shows all the feelings and the emotion history
+ - Has a button to show the feeling count
+
+2) activity_edit_emotion.xml
+ - For User to change the date or comment of the emotion and Save changes
+
+3) activity_display_comment.xml
+ - Used for user to add an optional comment to the feeling and Save Changes
+
+4) list_item.xml
+ - resource used for the adapter to show feelings on the list view
+
+References :
+  - https://stackoverflow.com/questions/45987761/quicksort-divide-and-conquer/45987872
+    By Josh Evans
