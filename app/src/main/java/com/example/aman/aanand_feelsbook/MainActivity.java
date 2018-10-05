@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
         final String text = btn.getText().toString();
 
         builder.setTitle("Feels Book");
-        builder.setMessage("Do you want to add any comments?");
+        builder.setMessage("Do you want to add any comments ?");
 
         builder.setPositiveButton("YES", new DialogInterface.OnClickListener() {
 
