@@ -12,4 +12,11 @@
     <string name="title_comment"> Comments (Optional)</string>
     <string name="Feeling_Saved"> Feeling Saved</string>
     <string name="Save_button">SAVE</string>
+    <string name="title_history"> Emotion History</string>
+    <string name="title_editDate">  Date (DD-MM-YY) (HH-MIN-SS)</string>
+    <string name="title_editComment">  Comments (Optional)</string>
+    <string name="title_editFeeling">  Feeling</string>
+    <string name="title_editFeelingsPage">  Edit Feeling</string>
+    <string name="button_editFeelingsPage"> SAVE</string>
+
 </resources>

@@ -1,19 +1,21 @@
 package com.example.aman.aanand_feelsbook;
 
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
-public abstract class Emotions {
-    protected Date date;
+public class Emotions {
+    protected String date;
     protected String comment;
+    protected String feeling;
 
-    public Emotions(Date date){
+    public Emotions(String date){
         this.date=date;
     }
 
-    public Date getDate(){
+    public String getDate(){
         return date;
     }
-    public void setDate(Date date){
+    public void setDate(String date){
         this.date=date;
     }
 
@@ -24,5 +26,13 @@ public abstract class Emotions {
         this.comment=comment;
     }
 
-    public abstract String getEmotion();
+    public void setFeeling(String feeling){
+        this.feeling=feeling;
+    }
+    public String getFeeling(){
+        return feeling;
+    }
+    public String toString(){
+        return this.date.toString()+" | "+ this.feeling +" | Comment : "+ this.comment;
+    }
 }

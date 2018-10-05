@@ -7,11 +7,12 @@
     tools:context=".DisplayCommentActivity">
 
     <EditText
-        android:id="@+id/body"
+        android:id="@+id/edit_Date"
         android:layout_width="fill_parent"
         android:layout_height="85dp"
         android:layout_marginTop="16dp"
         android:hint="@string/hint_comment"
+        android:maxLength="100"
         android:scrollbars="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -21,6 +22,8 @@
         android:id="@+id/textView2"
         android:layout_width="fill_parent"
         android:layout_height="25dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginStart="3dp"
         android:layout_marginTop="32dp"
         android:text="@string/title_comment"
         android:textColor="@android:color/black"
@@ -34,9 +37,10 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
+        android:onClick="SaveComment"
         android:text="@string/Save_button"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/body" />
+        app:layout_constraintTop_toBottomOf="@+id/edit_Date" />
 
     <TextView
         android:id="@+id/textView3"
